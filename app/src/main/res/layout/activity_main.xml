@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bjm"
+
+    tools:context="cn.mayt.maytmusic.MainActivity">
+
+    <include layout="@layout/include_top" android:id="@+id/nclude_top_id"></include>
+    <include layout="@layout/include_bottom" android:id="@+id/nclude_bottom_id"></include>
+<cn.mayt.maytmusic.view.ScrollableViewGroup
+    android:id="@+id/svg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/nclude_bottom_id"
+    android:layout_below="@id/nclude_top_id">
+    <include layout="@layout/include_page_play" />
+    <include layout="@layout/include_page_list" />
+    <include layout="@layout/include_page_lrc" />
+
+
+</cn.mayt.maytmusic.view.ScrollableViewGroup>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.mayt.maytmusic.view.ViewGroupHook xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="@mipmap/img_playinfo_bg">
+<TextView
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:text="暂无歌词"
+
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 1. left textview -->
+
+        <TextView
+            android:id="@+id/tv_curduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:text="00:00"
+            android:textColor="#ffffff" />
+        <!-- 2. right textview -->
+
+        <TextView
+            android:id="@+id/tv_totalduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:text="00:00"
+            android:textColor="#ffffff" />
+        <!-- 3. seekbar -->
+
+        <SeekBar
+            android:id="@+id/sk_duration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/tv_totalduration"
+            android:layout_toRightOf="@id/tv_curduration"
+            android:progressDrawable="@drawable/seek_background"
+            android:thumb="@mipmap/img_none" />
+    </RelativeLayout>
+</LinearLayout>
+    </RelativeLayout>
+</cn.mayt.maytmusic.view.ViewGroupHook>
