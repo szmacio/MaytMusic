@@ -11,6 +11,7 @@
     android:layout_alignParentBottom="true"
     android:background="@mipmap/img_playinfo_bg">
 <TextView
+    android:id="@+id/tv_minilrc"
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="20dp"
